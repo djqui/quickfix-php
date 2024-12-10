@@ -1,0 +1,119 @@
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+form {
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Centering the main content */
+main {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Search bar styles */
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin: 20px 0; /* Add margin for spacing */
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.search-bar {
+  display: flex;
+  width: 100%; /* Set width to 100% */
+  max-width: 800px; /* Match max width to fixers list */
+}
+
+.search-bar input[type="text"] {
+  flex: 1; /* Allow input to take available space */
+  padding: 10px; /* Padding for input */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 5px 0 0 5px; /* Rounded corners */
+  width: 700px;
+}
+
+.search-bar button {
+  padding: 10px 20px; /* Padding for button */
+  border: 1px solid #ccc; /* Border for button */
+  border-left: none; /* Remove left border to connect with input */
+  border-radius: 0 5px 5px 0; /* Rounded corners */
+  background-color: black; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Fixers list styles */
+.fixers-list {
+  width: 100%; /* Set width to 100% */
+  max-width: 800px; /* Limit max width */
+  margin-top: 20px; /* Space above the list */
+}
+
+.fixers-list ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.fixer-profile {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between content and buttons */
+  align-items: center; /* Center items vertically */
+  align-content: left;
+  margin-bottom: 20px; /* Space between fixers */
+  border: 1px solid #ccc; /* Border around each fixer */
+  padding: 10px; /* Padding inside each fixer */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.profile-picture {
+  width: 50px; /* Set width of the profile picture */
+  height: 50px; /* Set height of the profile picture */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.fixer-info {
+  display: flex;
+  flex-direction: column; /* Stack name and expertise vertically */
+}
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons next to each other */
+  gap: 10px; /* Space between buttons */
+}
+
+.button-container .btn {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center text */
+  padding: 10px; /* Add padding for better appearance */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Optional: rounded corners */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.button-container .btn:hover {
+  background-color: #333; /* Darker shade on hover */
+}
