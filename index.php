@@ -16,7 +16,7 @@ $pagePath = 'pages/' . $page . '.php';
 
 // Special handling for account page
 if ($page === 'account') {
-    $pagePath = 'pages/account.php';
+    $pagePath = '/quickfix-php/pages/account.php';
 }
 ?>
 
@@ -48,22 +48,13 @@ if ($page === 'account') {
                     <button class="nav-link btn btn-link">Contacts</button>
                 </li>
                 <li class="nav-item">
-    <a href="?page=account" class="nav-link btn btn-link">Account</a>
-</li>
+                    <a href="?page=account" class="nav-link btn btn-link">Account</a>
+                </li>
             </ul>
         </div>
     </nav>
 </header>
 
-    <main id="view-panel">
-        <?php 
-        // Include the requested page, check if the file exists first
-        if (file_exists($pagePath)) {
-            include $pagePath; // Include the requested page
-        } else {
-            echo "<p>Page not found.</p>"; // Handle the case where the page does not exist
-        }
-        ?>
-    </main>
+    
 </body>
 </html>
